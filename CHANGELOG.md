@@ -5,7 +5,7 @@ Skeleton Change Log
 -----------------------
 
 
-1.0.0 February 14, 2016
+1.0.0 March 03, 2016
 -----------------------
 
 This is first release.
