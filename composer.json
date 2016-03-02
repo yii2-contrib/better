@@ -1,0 +1,36 @@
+{
+  "name": "light/skeleton",
+  "description": "light's project skeleton",
+  "keywords": [
+    "skeleton"
+  ],
+  "homepage": "https://github.com/light/skeleton",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "lichunqiang",
+      "email": "light-li@hotmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "light\\skeleton\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "light\\skeleton\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": [
+      "php ./vendor/bin/phpunit"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  }
+}
