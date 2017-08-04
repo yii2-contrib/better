@@ -34,7 +34,9 @@ final class MySQLMigrateController extends MigrateController
     {
         $result = parent::beforeAction($action);
         
-        $this->db->tablePrefix = $this->tablePrefix;
+        if ($this->tablePrefix) {
+            $this->db->tablePrefix = $this->tablePrefix;
+        }
         
         return $result;
     }
