@@ -34,7 +34,7 @@ final class MySQLMigrateController extends MigrateController
     {
         $result = parent::beforeAction($action);
         
-        if ($this->tablePrefix) {
+        if ($this->tablePrefix && 'create' !== $action->id) {
             $this->db->tablePrefix = $this->tablePrefix;
         }
         
